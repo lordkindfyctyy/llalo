@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIGREE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background: linear-gradient(to right, orange, green); /* Cambiar el fondo a un degradado de naranja a verde */
+            color: white; /* Cambiar el color del texto a blanco */
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            font-family: 'Arial Black', Gadget, sans-serif; /* Cambiar la fuente del h1 */
+        }
+        body {
+            font-weight: bold; /* Cambiar el formato de la letra a negrita */
+        }
+        .product-card img {
+            width: 200px; /* Tamaño uniforme */
+            height: 200px;
+            object-fit: contain; /* Ajustar las imágenes sin deformarlas */
+            border-radius: 10px; /* Bordes redondeados */
+            border: 2px solid #ddd; /* Agregar borde a las imágenes */
+            margin: 10px auto; /* Centrar las imágenes */
+            display: block;
+        }
+        .product-card {
+            border: 2px solid #f0c14b; /* Contorno en un color agradable */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elegante */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+        }
+        .product-card:hover {
+            transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+        }
+        .buy-button {
+            background-color: #28a745; /* Botón de compra en verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy-button:hover {
+            background-color: #218838; /* Verde más oscuro al pasar el mouse */
+        }
+    </style>
+    <script>
+        let cartCount = 0;
+
+        function addToCart() {
+            cartCount++;
+            document.getElementById('cart-counter').textContent = `Carrito: ${cartCount}`;
+        }
+    </script>
+</head>
+<body>
+    <div id="cart-counter" class="cart-counter">Carrito: 0</div>
+    <header>
+        <h1>Pedigree</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <div class="discount">15% OFF</div>
+                <img src="caja 7 unidades pedigreee dentastick" alt="Pedigree adulto cereales">
+                <h3>pedigree dentastix mediano 8 paquetes 7uni</h3>
+                <div class="price">
+                    <span class="original-price"></span>
+                    <span class="discounted-price">$26,400</span>
+                </div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">20</span>
+                    <div class="quantity">
+                        <label for="quantity1">Cantidad:</label>
+                        <input type="number" id="quantity1" name="quantity1" min="1" max="20" value="1">
+                    </div>
+                    <button class="add-to-cart-button" onclick="addToCart()">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <div class="discount">15% OFF</div>
+                <img src="PEDIGREE RAZA PEQUEÑA 8K Y 15K.jpg" alt="Pedigree Adulto Pollo">
+                <h3>PEDIGREE Perros Adultos carne, pollo y cereal</h3>
+                <div class="price">
+                    <select>
+                        <option value="15kg">15 Kgs</option>
+                        <option value="8kg">8 Kgs</option>
+                    </select>
+                    <span class="original-price"></span>
+                    <span class="discounted-price">$45,000</span>
+                </div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">25</span>
+                    <div class="quantity">
+                        <label for="quantity2">Cantidad:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="1" max="25" value="1">
+                    </div>
+                    <button class="add-to-cart-button" onclick="addToCart()">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <div class="discount">10% OFF</div>
+                <img src="pedigree-adulto-etapa-2---carne--pollo-y-cereales._variacion_1240" alt="Pedigree Adulto Carne y Vegetales">
+                <h3>PEDIGREE Perros Adultos carne y vegetales</h3>
+                <div class="price">
+                    <span class="original-price"></span>
+                    <span class="discounted-price">$55,000</span>
+                    <select>
+                        <option value="21kg">21 Kgs</option>
+                        <option value="15kg">15 Kgs</option>
+                    </select>
+                </div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">30</span>
+                    <div class="quantity">
+                        <label for="quantity3">Cantidad:</label>
+                        <input type="number" id="quantity3" name="quantity3" min="1" max="30" value="1">
+                    </div>
+                    <button class="add-to-cart-button" onclick="addToCart()">Agregar al carrito</button>
+                </div>
+            </div>
+
+</body>
+</html>

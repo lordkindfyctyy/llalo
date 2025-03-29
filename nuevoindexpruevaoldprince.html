@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Prince</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            font-family: 'Arial Black', Gadget, sans-serif; /* Cambiar la fuente del h1 */
+        }
+        .product-grid {
+            margin-top: 20px;
+        }
+        body {
+            font-weight: bold; /* Cambiar el formato de la letra a negrita */
+        }
+        .product-card img {
+            width: 200px; /* Tamaño uniforme */
+            height: 200px;
+            object-fit: contain; /* Ajustar las imágenes sin deformarlas */
+            border-radius: 10px; /* Bordes redondeados */
+            border: 2px solid #ddd; /* Agregar borde a las imágenes */
+            margin: 10px auto; /* Centrar las imágenes */
+            display: block;
+        }
+        .product-card {
+            border: 2px solid #f0c14b; /* Contorno en un color agradable */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elegante */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+        }
+        .product-card:hover {
+            transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+        }
+        .buy-button {
+            background-color: #28a745; /* Botón de compra en verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy-button:hover {
+            background-color: #218838; /* Verde más oscuro al pasar el mouse */
+        }
+        .stock {
+            margin-top: 10px;
+        }
+        .quantity {
+            margin-top: 5px;
+        }
+        .add-to-cart-button {
+            background-color: #007bff; /* Botón de agregar al carrito en azul */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .add-to-cart-button:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Old Prince</h1>
+    </header>
+    <main>
+        <p>La marca más completa de alimento balanceado para perros y gatos.</p>
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <div class="discount-tag">10% OFF</div>
+                <img src="old prince cordero 15k numero 1.jpg" alt="Old Prince Adulto Cordero">
+                <h3>Old Prince Adulto Cordero 15 Kg</h3>
+                <div class="size-options">
+                    <button>15kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$63,000</span>
+                    <span class="discounted-price">$58,000</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">10</span>
+                    <div class="quantity">
+                        <label for="quantity1">Cantidad:</label>
+                        <input type="number" id="quantity1" name="quantity1" min="1" max="10" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <div class="discount-tag">12% OFF</div>
+                <img src="old prince corderocachorro" alt="Old Prince Puppy">
+                <h3>Old Prince Puppy 7.5 Kg</h3>
+                <div class="size-options">
+                    <button>7.5kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$76,000</span>
+                    <span class="discounted-price">$66,000</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">12</span>
+                    <div class="quantity">
+                        <label for="quantity2">Cantidad:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="1" max="12" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <div class="discount-tag">15% OFF</div>
+                <img src="old-prince-novel-cordero-y-arroz-senior-all-breeds_variacion_4344.jpg" alt="Old Prince Senior">
+                <h3>Old Prince Senior 15 Kg</h3>
+                <div class="size-options">
+                    <button>15kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$73,200</span>
+                    <span class="discounted-price">$66,000</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">8</span>
+                    <div class="quantity">
+                        <label for="quantity3">Cantidad:</label>
+                        <input type="number" id="quantity3" name="quantity3" min="1" max="8" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 4: Raza Pequeña -->
+            <div class="product-card">
+                <div class="discount-tag">10% OFF</div>
+                <img src="old-prince-proteinas-noveles-adultos-razas-pequena.jpg" alt="Old Prince Raza Pequeña">
+                <h3>Old Prince Raza Pequeña 15 Kg</h3>
+                <div class="size-options">
+                    <button>15kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$75,000</span>
+                    <span class="discounted-price">$68,000</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">15</span>
+                    <div class="quantity">
+                        <label for="quantity4">Cantidad:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="1" max="15" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 5: Cordero Gato Adulto -->
+            <div class="product-card">
+                <div class="discount-tag">12% OFF</div>
+                <img src="old prince gato cordero" alt="Old Prince Cordero Gato Adulto">
+                <h3>Old Prince Cordero Gato Adulto 7.5 Kg</h3>
+                <div class="size-options">
+                    <button>7.5kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$61,600</span>
+                    <span class="discounted-price">$55,000</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">20</span>
+                    <div class="quantity">
+                        <label for="quantity5">Cantidad:</label>
+                        <input type="number" id="quantity5" name="quantity5" min="1" max="20" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 6: Cordero Gato Castrado -->
+            <div class="product-card">
+                <div class="discount-tag">10% OFF</div>
+                <img src="desktop old prince sterilized.jpg" alt="Old Prince Cordero Gato Castrado">
+                <h3>Old Prince Cordero Gato Castrado 7.5 Kg</h3>
+                <div class="size-options">
+                    <button>7.5kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$70,000</span>
+                    <span class="discounted-price">$60,000</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">18</span>
+                    <div class="quantity">
+                        <label for="quantity6">Cantidad:</label>
+                        <input type="number" id="quantity6" name="quantity6" min="1" max="18" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 7: Premium Perro Pollo Adulto -->
+            <div class="product-card">
+                <div class="discount-tag">15% OFF</div>
+                <img src="old-prince-adult-original 20k.jpg" alt="Old Prince Premium Perro Pollo Adulto">
+                <h3>Old Prince Premium Perro Pollo 20 Kgs Adulto</h3>
+                <div class="size-options">
+                    <button>20kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$50,000</span>
+                    <span class="discounted-price">$40,500</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">25</span>
+                    <div class="quantity">
+                        <label for="quantity7">Cantidad:</label>
+                        <input type="number" id="quantity7" name="quantity7" min="1" max="25" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 8: Gato Adulto Premium Pollo -->
+            <div class="product-card">
+                <div class="discount-tag">10% OFF</div>
+                <img src="old prince gato premium pollo.jpg" alt="Old Prince Gato Adulto Premium Pollo">
+                <h3>Old Prince Gato Adulto Premium Pollo 7.5 Kg</h3>
+                <div class="size-options">
+                    <button>7.5kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$45;000</span>
+                    <span class="discounted-price">$26,500</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">30</span>
+                    <div class="quantity">
+                        <label for="quantity8">Cantidad:</label>
+                        <input type="number" id="quantity8" name="quantity8" min="1" max="30" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 9: Cordero Light Perro -->
+            <div class="product-card">
+                <div class="discount-tag">12% OFF</div>
+                <img src="old prince light 15kgs.jpg" alt="Old Prince Cordero Light Perro">
+                <h3>Old Prince Cordero Light Perro 15 Kg</h3>
+                <div class="size-options">
+                    <button>15kgs</button>
+                </div>
+                <div class="price">
+                    <span class="original-price">$75,200</span>
+                    <span class="discounted-price">$64,500</span>
+                </div>
+                <div class="shipping">Envío gratis * hoy</div>
+                <button class="buy-button">COMPRAR</button>
+                <div class="stock">
+                    <span>Stock disponible: </span>
+                    <span class="stock-count">22</span>
+                    <div class="quantity">
+                        <label for="quantity9">Cantidad:</label>
+                        <input type="number" id="quantity9" name="quantity9" min="1" max="22" value="1">
+                    </div>
+                    <button class="add-to-cart-button">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
